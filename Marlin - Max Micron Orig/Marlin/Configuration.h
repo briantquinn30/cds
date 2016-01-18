@@ -9,7 +9,7 @@
 //Implementation of an idea by Prof Braino to inform user that any changes made
 //to this build by the user have been successfully uploaded into firmware.
 #define STRING_VERSION_CONFIG_H __DATE__ " " __TIME__ // build date and time
-#define STRING_CONFIG_H_AUTHOR "(MakerLab, default config)" //Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(BQ, default config)" //Who made the changes.
 
 // SERIAL_PORT selects which serial port should be used for communication with the host.
 // This allows the connection of wireless adapters (for instance) to non-default port pins.
@@ -17,8 +17,9 @@
 #define SERIAL_PORT 0
 
 // This determines the communication speed of the printer
-//#define BAUDRATE 250000
-#define BAUDRATE 115200
+#define BAUDRATE 250000
+//#define BAUDRATE 115200
+//#define BAUDRATE 57600
 
 //// The following define selects which electronics board you have. Please choose the one that matches your setup
 // 10 = Gen7 custom (Alfons3 Version) "https://github.com/Alfons3/Generation_7_Electronics"
@@ -332,7 +333,7 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 //LCD and SD support
 //#define ULTRA_LCD  //general lcd support, also 16x2
 //#define DOGLCD  // Support for SPI LCD 128x64 (Controller ST7565R graphic Display Family)
-//#define SDSUPPORT // Enable SD Card Support in Hardware Console
+// #define SDSUPPORT // Enable SD Card Support in Hardware Console
 //#define SDSLOW // Use slower SD transfer mode (not normally needed - uncomment if you're getting volume init error)
 
 //#define ULTIMAKERCONTROLLER //as available from the ultimaker online store.
